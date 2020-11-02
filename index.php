@@ -36,7 +36,7 @@
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/">
                     <img src="assets/img/icon.png" height="30px" alt="" loading="lazy"/>
                     Schreinerei Heinz
                     </a>
@@ -45,9 +45,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" aria-current="page" href="?cat=startseite">Home</a>
-                            <a class="nav-link" href="?cat=rechner">Preis Rechner</a>
-                            <a class="nav-link" href="?cat=kontakt">Kontakt</a>
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" href="/page/rechner">Preis Rechner</a>
+                            <a class="nav-link" href="/page/kontakt">Kontakt</a>
                         </div>
                     </div>
                 </div>
@@ -98,8 +98,8 @@
                                 Fr-Sa: 10:00 - 14:00
                                 </p>
                                 <p>
-                                <a href="?cat=impressum">Impressum</a></br>
-                                <a href="?cat=datenschutz">Datenschutzerklärung</a></br>
+                                <a href="/page/impressum">Impressum</a></br>
+                                <a href="/page/datenschutz">Datenschutzerklärung</a></br>
                                 </p>
                             </p>
                         </div>
