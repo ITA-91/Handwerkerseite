@@ -13,20 +13,20 @@
 		<meta property="og:url" content="https://schreiner.klaas-it.de">
 		<meta property="og:title" content="Schreinerei Heinz">
 		<meta property="og:description" content="Wir brettern alle Löcher.">
-		<meta property="og:image" content="https://schreiner.klaas-it.de/assets/img/meta-header.png">
+		<meta property="og:image" content=assets/img/meta-header.png">
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://schreiner.klaas-it.de">
 		<meta property="twitter:title" content="Schreinerei Heinz">
 		<meta property="twitter:description" content="Wir brettern alle Löcher.">
-		<meta property="twitter:image" content="https://schreiner.klaas-it.de/assets/img/meta-header.png">
+		<meta property="twitter:image" content="assets/img/meta-header.png">
 		<!-- Styles/JS --->
-		<link rel="stylesheet" href="https://schreiner.klaas-it.de/assets/css/scrollbar.css"/>
-		<link rel="Shortcut Icon" href="https://schreiner.klaas-it.de/assets/img/icon.png" type="image/x-icon" />
-		<link rel="icon" href="https://schreiner.klaas-it.de/assets/img/icon.png" sizes="32x32" />
-		<link rel="icon" href="https://schreiner.klaas-it.de/assets/img/icon.png" sizes="192x192" />
-		<link rel="apple-touch-icon" href="https://schreiner.klaas-it.de/assets/img/icon.png" />
-		<meta name="msapplication-TileImage" content="https://schreiner.klaas-it.de/assets/img/icon.png" />
+		<link rel="stylesheet" href="assets/css/scrollbar.css"/>
+		<link rel="Shortcut Icon" href="assets/img/icon.png" type="image/x-icon" />
+		<link rel="icon" href="assets/img/icon.png" sizes="32x32" />
+		<link rel="icon" href="assets/img/icon.png" sizes="192x192" />
+		<link rel="apple-touch-icon" href="assets/img/icon.png" />
+		<meta name="msapplication-TileImage" content="assets/img/icon.png" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 		<link rel="stylesheet" href="/assets/css/mdb.min.css">
 		<script src="https://api.vac.one/js/fp.js"></script>
