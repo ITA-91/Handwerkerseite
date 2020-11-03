@@ -94,13 +94,27 @@
     if(isset($_REQUEST['cat']) && !empty($_REQUEST['cat'])){
         $page = trim(strtolower(htmlspecialchars($_REQUEST['cat'])));
         if(!file_exists("tpl/".$page.".php")){
-            $page = 'startseite';
+            $page = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/tpl/'.$page.'.php');
         }
     } else {
-        $page = 'startseite';
+        $page = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/tpl/startseite.php');
     }
 
-    include $_SERVER['DOCUMENT_ROOT'].'/tpl/'.$page.'.php';
+    $search = [
+        '<%DATE>',
+        '<%TIME>',
+        '<%PAGE_TITLE>',
+        '<%PAGE_SLOGAN>'
+    ];
+    $replace = [
+        date('d.m.Y'),
+        date('H:i'),
+        'Schreinerei Heinz',
+        'Wir nageln alle Bretter!'
+    ];
+    $page = str_replace($search, $replace, $page);
+
+    echo $page;
 
     ?>
 
