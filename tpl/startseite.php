@@ -2,13 +2,11 @@
 
     <div class="tp-banner-container">
         <div class="tp-banner" >
-            <ul>	<!-- SLIDE  -->
+            <ul>
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
-                    <!-- MAIN IMAGE -->
-                    <img src="/assets/upload/slide/1.jpg"  alt="slidebg1" data-lazyload="/assets/upload/slide/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                    <!-- LAYERS -->
 
-                    <!-- LAYER NR. 1 -->
+                    <img src="/assets/upload/slide/1.jpg"  alt="slidebg1" data-lazyload="/assets/upload/slide/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
                     <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
                          data-y="280"
@@ -23,7 +21,6 @@
                          style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">Wir schreinern mit <br><span>Präzision</span> <br>
                     </div>
 
-                    <!-- LAYER NR. 2 -->
                     <div class="tp-caption small_text customin tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
                          data-y="400"
@@ -38,7 +35,6 @@
                          style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Wir setzen das Projekt Ihrer Träume um!
                     </div>
 
-                    <!-- LAYER NR. 3 -->
                     <div class="tp-caption lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
                          data-y="510"
@@ -54,7 +50,6 @@
                          style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn'>Projekte</a>
                     </div>
 
-                    <!-- LAYER NR. 4 -->
                     <div class="tp-caption lfr tp-resizeme rs-parallaxlevel-0"
                          data-x="200"
                          data-y="510"
@@ -72,13 +67,11 @@
 
                 </li>
 
-                <!-- SLIDE  -->
-                <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-saveperformance="on"  data-title="Ken Burns Slide">
-                    <!-- MAIN IMAGE -->
-                    <img src="/assets/images/dummy.png"  alt="2" data-lazyload="/assets/upload/slide/2.jpg" data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
-                    <!-- LAYERS -->
 
-                    <!-- LAYER NR. 1 -->
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-saveperformance="on"  data-title="Ken Burns Slide">
+
+                    <img src="/assets/images/dummy.png"  alt="2" data-lazyload="/assets/upload/slide/2.jpg" data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+
                     <div class="tp-caption small_text customin tp-resizeme rs-parallaxlevel-0"
                          data-x="470"
                          data-y="310"
@@ -93,7 +86,6 @@
                          style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Wir sind erfahren.
                     </div>
 
-                    <!-- LAYER NR. 2 -->
                     <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="160"
                          data-y="358"
@@ -107,7 +99,6 @@
                          style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">All You Need for building
                     </div>
 
-                    <!-- LAYER NR. 3 -->
                     <div class="tp-caption finewide_medium_white lfr tp-resizeme rs-parallaxlevel-0"
                          data-x="185"
                          data-y="412"
@@ -121,7 +112,6 @@
                          style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;"><span>Creative &amp; Professional </span>
                     </div>
 
-                    <!-- LAYER NR. 4 -->
                     <div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0"
                          data-x="470"
                          data-y="505"
@@ -137,13 +127,12 @@
                          style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn'>View Projects</a>
                     </div>
                 </li>
-                <!-- SLIDE  -->
-                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="Parallax 3D">
-                    <!-- MAIN IMAGE -->
-                    <img src="/assets/upload/slide/3.jpg"  alt="3dbg" data-lazyload="/assets/upload/slide/3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                    <!-- LAYERS -->
 
-                    <!-- LAYER NR. 1 -->
+
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="Parallax 3D">
+
+                    <img src="/assets/upload/slide/3.jpg"  alt="3dbg" data-lazyload="/assets/upload/slide/3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
                     <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
                          data-y="280"
@@ -158,7 +147,6 @@
                          style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;"><span>Great</span> Buildings<br>
                     </div>
 
-                    <!-- LAYER NR. 2 -->
                     <div class="tp-caption small_text customin tp-resizeme rs-parallaxlevel-0 backgroun-col"
                          data-x="0"
                          data-y="350"
@@ -174,7 +162,6 @@
                         nostrud exercitation ullamco laboris nisi ut aliquip commodo.
                     </div>
 
-                    <!-- LAYER NR. 3 -->
                     <div class="tp-caption lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
                          data-y="490"
@@ -190,7 +177,6 @@
                          style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn'>load more</a>
                     </div>
 
-                    <!-- LAYER NR. 4 -->
                     <div class="tp-caption lfr tp-resizeme rs-parallaxlevel-0"
                          data-x="200"
                          data-y="490"
@@ -211,19 +197,13 @@
         </div>
     </div>
 </section>
-<!-- End home section -->
 
-<!-- banner-section
-    ================================================== -->
 <section class="banner-section">
     <div class="container">
         <h2>Kontaktieren Sie uns jetzt!<a href="/page/kontakt" class="button-one">Kontakt</a></h2>
     </div>
 </section>
-<!-- End banner section -->
 
-<!-- services-offer
-    ================================================== -->
 <section class="services-offer-section">
     <div class="container">
         <div class="row">
@@ -265,10 +245,7 @@
         </div>
     </div>
 </section>
-<!-- End services-offer section -->
 
-<!-- projects
-    ================================================== -->
 <section class="projects-section">
     <div class="container">
         <div class="project-title">
@@ -344,10 +321,7 @@
         </div>
     </div>
 </section>
-<!-- End projects -->
 
-<!-- about section
-    ================================================== -->
 <section class="about-section">
     <div class="container">
         <div class="row">
@@ -363,7 +337,6 @@
             </div>
             <div class="col-md-6">
 
-                <!-- Nav tabs -->
                 <div class="tab-posts-box">
                     <ul class="nav nav-tabs" id="myTab">
                         <li class="active">
@@ -440,10 +413,7 @@
         </div>
     </div>
 </section>
-<!-- End about section -->
 
-<!-- testimonial-section
-    ================================================== -->
 <section class="testimonial-section">
     <div class="container">
 
@@ -473,10 +443,7 @@
 
     </div>
 </section>
-<!-- End testimonial section -->
 
-<!-- news-section
-    ================================================== -->
 <section class="news-section">
     <div class="container">
         <div class="news-title">
@@ -532,10 +499,7 @@
 
     </div>
 </section>
-<!-- End news section -->
 
-<!-- clients-section
-    ================================================== -->
 <section class="clients-section">
     <div class="container">
         <div class="clients-title">
@@ -582,7 +546,6 @@
 
     </div>
 </section>
-<!-- End clients section -->
 
 <script type="text/javascript">
 
@@ -650,6 +613,6 @@
                 fullScreenOffsetContainer: ".header"
             });
 
-    });	//ready
+    });
 
 </script>
