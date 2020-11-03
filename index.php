@@ -77,7 +77,7 @@
                         <li><a href="#">Projekte</a></li>
                         <li><a href="#">Referenzen</a></li>
                         <li><a href="/page/kontakt">Kontakt</a></li>
-                        <li class="drop"><a href="blog.html">Rechtliches</a>
+                        <li class="drop"><a style="cursor: pointer;">Rechtliches</a>
                             <ul class="dropdown">
                                 <li><a href="/page/impressum">Impressum</a></li>
                                 <li><a href="/page/datenschutz">Datenschutz</a></li>
