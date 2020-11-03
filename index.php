@@ -92,7 +92,7 @@
     <?php
 
     if(isset($_REQUEST['cat']) && !empty($_REQUEST['cat'])){
-        $page = strtolower(htmlspecialchars($_REQUEST['cat']));
+        $page = trim(strtolower(htmlspecialchars($_REQUEST['cat'])));
         if(!file_exists("tpl/".$page.".php")){
             $page = 'startseite';
         }
