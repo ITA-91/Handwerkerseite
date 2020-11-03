@@ -90,7 +90,7 @@
                          data-splitout="none"
                          data-elementdelay="0.05"
                          data-endelementdelay="0.1"
-                         style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Wir sind erfahren!
+                         style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Wir sind erfahren.
                     </div>
 
                     <!-- LAYER NR. 2 -->
