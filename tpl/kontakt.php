@@ -15,21 +15,15 @@
 <div class="col-md-8">
             <?php
 
-            if(isset($_REQUEST['anrede']) && isset($_REQUEST['vorname']) && isset($_REQUEST['nachname']) && isset($_REQUEST['email']) && isset($_REQUEST['tel']) && isset($_REQUEST['nachricht'])){
+            if(isset($_REQUEST['name']) && isset($_REQUEST['nachname']) && isset($_REQUEST['email']) && isset($_REQUEST['tel']) && isset($_REQUEST['nachricht'])){
                 foreach($_REQUEST as $req => $val){
                     $_REQUEST[$req] = htmlspecialchars($val);
                 }
-                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage '.$_REQUEST['anrede'].' '.$_REQUEST['vorname'].' '.$_REQUEST['nachname'].', ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
+                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
             } else {
             ?>
-            <form id="contact-form">
+            <form action="" method="POST" id="contact-form">
                 <h2>Senden Sie uns eine Nachricht</h2>
-                <div class="row">
-                    <select name="anrede" id="anrede">
-                    <option selected value="Herr">Herr</option>
-                    <option value="Frau">Frau</option>
-                    </select>
-                </div>
                 <div class="row">
                     <div class="col-md-6">
                         <input name="name" id="name" type="text" placeholder="Vorname" required>
@@ -40,14 +34,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <input name="email" id="email" type="email" placeholder="E-Mail" required>
+                        <input name="email" id="email" type="text" placeholder="E-Mail" required>
                     </div>
                     <div class="col-md-6">
-                        <input name="tel" id="tel" type="tel" placeholder="Ihre Rufnummer" required>
+                        <input name="tel" id="tel" type="text" placeholder="Ihre Rufnummer" required>
                     </div>
                 </div>
                 <textarea name="nachricht" id="nachricht" placeholder="Nachricht" required></textarea>
-                <input type="submit" id="submit_contact" value="Absenden">
+                <input type="submit" onClick="document.getElementById('contact-form').submit();" id="submit_contact" value="Absenden">
                 <div id="msg" class="message"></div>
             </form>
             <?php } ?>
