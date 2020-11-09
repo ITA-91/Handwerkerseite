@@ -15,11 +15,11 @@
         <div class="col-md-8">
             <?php
             
-            if(isset($_REQUEST['name'])){
-                if(isset($_REQUEST['nachname'])){
-                    if(isset($_REQUEST['email'])){
-                        if(isset($_REQUEST['tel'])){
-                            if(isset($_REQUEST['nachricht'])){
+            if(isset($_REQUEST['name']) && strlen($_REQUEST['name']) >= 1){
+                if(isset($_REQUEST['nachname']) && strlen($_REQUEST['nachname']) >= 1){
+                    if(isset($_REQUEST['email']) && strlen($_REQUEST['email']) >= 1){
+                        if(isset($_REQUEST['tel']) && strlen($_REQUEST['tel']) >= 1){
+                            if(isset($_REQUEST['nachricht']) && strlen($_REQUEST['nachricht']) >= 1){
                                 foreach($_REQUEST as $req => $val){
                                     $_REQUEST[$req] = htmlspecialchars($val);
                                 }
