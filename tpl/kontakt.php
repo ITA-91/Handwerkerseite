@@ -40,10 +40,10 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <input name="email" id="email" type="email" placeholder="E-Mail" required>
+                        <input name="email" id="email" type="text" placeholder="E-Mail" required>
                     </div>
                     <div class="col-md-6">
-                        <input name="tel" id="tel" type="tel" placeholder="Ihre Rufnummer" required>
+                        <input name="tel" id="tel" type="text" placeholder="Ihre Rufnummer" required>
                     </div>
                 </div>
                 <textarea name="nachricht" id="nachricht" placeholder="Nachricht" required></textarea>
