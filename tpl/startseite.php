@@ -294,7 +294,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="news-post">
                         <img src="/assets/images/templates/others/ser1.jpg" alt="">
-                        <h2><a href="single-post.html">Artikel 1</a></h2>
+                        <h2><a href="#">Artikel 1</a></h2>
                         <span>21 Oktober 2020</span>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur.</p>
@@ -304,7 +304,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="news-post">
                         <img src="/assets/images/templates/others/ser1.jpg" alt="">
-                        <h2><a href="single-post.html">Artikel 2</a></h2>
+                        <h2><a href="#">Artikel 2</a></h2>
                         <span>21 Oktober 2020</span>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur.</p>
@@ -314,7 +314,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="news-post">
                         <img src="/assets/images/templates/others/ser1.jpg" alt="">
-                        <h2><a href="single-post.html">Artikel 3</a></h2>
+                        <h2><a href="#">Artikel 3</a></h2>
                         <span>21 Oktober 2020</span>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur.</p>
@@ -324,7 +324,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="news-post">
                         <img src="/assets/images/templates/others/ser1.jpg" alt="">
-                        <h2><a href="single-post.html">Artikel 4</a></h2>
+                        <h2><a href="#">Artikel 4</a></h2>
                         <span>21 Oktober 2020</span>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur.</p>
