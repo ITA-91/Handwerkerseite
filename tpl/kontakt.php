@@ -23,18 +23,18 @@
                                 foreach($_REQUEST as $req => $val){
                                     $_REQUEST[$req] = htmlspecialchars($val);
                                 }
-                                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
+                                echo '<p id="msg" class="message">ERFOLG - Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
                             } else {
-                                echo '<p id="msg" class="message">Ihr Nachricht wurde nicht angegeben!</p>';
+                                echo '<p id="msg" class="message">FEHLER - Ihr Nachricht wurde nicht angegeben!</p>';
                             }
                         } else {
-                            echo '<p id="msg" class="message">Ihr Telefonummer wurde nicht angegeben!</p>';
+                            echo '<p id="msg" class="message">FEHLER - Ihr Telefonummer wurde nicht angegeben!</p>';
                         }
                     } else {
-                        echo '<p id="msg" class="message">Ihr Email wurde nicht angegeben!</p>';
+                        echo '<p id="msg" class="message">FEHLER - Ihr Email wurde nicht angegeben!</p>';
                     }
                 } else {
-                    echo '<p id="msg" class="message">Ihr Nachname wurde nicht angegeben!</p>';
+                    echo '<p id="msg" class="message">FEHLER - Ihr Nachname wurde nicht angegeben!</p>';
                 }
             } else { ?>
                 <form action="" method="POST" id="contact-form">
