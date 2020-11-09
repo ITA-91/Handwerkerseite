@@ -15,7 +15,7 @@
 <div class="col-md-8">
             <?php
 
-            if(isset($_REQUEST['anrede']) && isset($_REQUEST['vorname']) && isset($_REQUEST['nachname']) && isset($_REQUEST['email']) && isset($_REQUEST['tel']) && isset($_REQUEST['nachricht'])){
+            if(isset(isset($_REQUEST['vorname']) && isset($_REQUEST['nachname']) && isset($_REQUEST['email']) && isset($_REQUEST['tel']) && isset($_REQUEST['nachricht'])){
                 foreach($_REQUEST as $req => $val){
                     $_REQUEST[$req] = htmlspecialchars($val);
                 }
