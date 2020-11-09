@@ -25,12 +25,6 @@
             <form id="contact-form">
                 <h2>Senden Sie uns eine Nachricht</h2>
                 <div class="row">
-                    <select name="anrede" id="anrede">
-                    <option selected value="Herr">Herr</option>
-                    <option value="Frau">Frau</option>
-                    </select>
-                </div>
-                <div class="row">
                     <div class="col-md-6">
                         <input name="name" id="name" type="text" placeholder="Vorname" required>
                     </div>
