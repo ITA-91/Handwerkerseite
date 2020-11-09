@@ -12,17 +12,32 @@
                 </ul>
             </div>
         </div>
-<div class="col-md-8">
+        <div class="col-md-8">
             <?php
-
-            if(isset($_REQUEST['name']) && isset($_REQUEST['nachname']) && isset($_REQUEST['email']) && isset($_REQUEST['tel']) && isset($_REQUEST['nachricht'])){
-                foreach($_REQUEST as $req => $val){
-                    $_REQUEST[$req] = htmlspecialchars($val);
+            
+            if(isset($_REQUEST['name'])){
+                if(isset($_REQUEST['nachname'])){
+                    if(isset($_REQUEST['email'])){
+                        if(isset($_REQUEST['tel'])){
+                            if(isset($_REQUEST['nachricht'])){
+                                foreach($_REQUEST as $req => $val){
+                                    $_REQUEST[$req] = htmlspecialchars($val);
+                                }
+                                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
+                            } else {
+                                echo '<p id="msg" class="message">Ihr Nachricht wurde nicht angegeben!</p>';
+                            }
+                        } else {
+                            echo '<p id="msg" class="message">Ihr Telefonummer wurde nicht angegeben!</p>';
+                        }
+                    } else {
+                        echo '<p id="msg" class="message">Ihr Email wurde nicht angegeben!</p>';
+                    }
+                } else {
+                    echo '<p id="msg" class="message">Ihr Nachname wurde nicht angegeben!</p>';
                 }
-                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
-            } else {
-            ?>
-            <form action="" method="POST" id="contact-form">
+            } else { ?>
+                <form action="" method="POST" id="contact-form">
                 <h2>Senden Sie uns eine Nachricht</h2>
                 <div class="row">
                     <div class="col-md-6">
