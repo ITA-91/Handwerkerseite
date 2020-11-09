@@ -19,7 +19,7 @@
                 foreach($_REQUEST as $req => $val){
                     $_REQUEST[$req] = htmlspecialchars($val);
                 }
-                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['vorname'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
+                echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
             } else {
             ?>
             <form action="" method="POST" id="contact-form">
