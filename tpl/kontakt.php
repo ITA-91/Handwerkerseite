@@ -22,7 +22,7 @@
                 echo '<p id="msg" class="message">Vielen Dank für Ihre Anfrage '.$_REQUEST['anrede'].' '.$_REQUEST['vorname'].' '.$_REQUEST['nachname'].', ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
             } else {
             ?>
-            <form id="contact-form">
+            <form action="" method="POST" id="contact-form">
                 <h2>Senden Sie uns eine Nachricht</h2>
                 <div class="row">
                     <div class="col-md-6">
