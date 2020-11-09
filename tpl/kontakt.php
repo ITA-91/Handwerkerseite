@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <textarea name="nachricht" id="nachricht" placeholder="Nachricht" required></textarea>
-                <input type="submit" id="submit_contact" value="Absenden">
+                <input type="submit" onClick="document.getElementById('contact-form').submit();" id="submit_contact" value="Absenden">
                 <div id="msg" class="message"></div>
             </form>
             <?php } ?>
