@@ -5,7 +5,7 @@
             <ul>
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
 
-                    <img src="/assets/upload/slide/1.jpg"  alt="slidebg1" data-lazyload="/assets/upload/slide/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="/assets/images/templates/slide/1.jpg" alt="slidebg1" data-lazyload="/assets/upload/slide/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
@@ -131,7 +131,7 @@
 
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="Parallax 3D">
 
-                    <img src="/assets/upload/slide/3.jpg"  alt="3dbg" data-lazyload="/assets/upload/slide/3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="/assets/images/templates/slide/3.jpg" alt="3dbg" data-lazyload="/assets/upload/slide/3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
                          data-x="0"
