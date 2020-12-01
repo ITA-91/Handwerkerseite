@@ -15,7 +15,7 @@ function send_mail($email, $vorname, $nachname){
     try{
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->SMTPDebug = 2;
+        $mail->SMTPDebug = 0;
         $mail->Host = 'basten-it.eu';
         $mail->Port = 25;
         $mail->SMTPSecure = 'tls';
