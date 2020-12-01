@@ -12,6 +12,7 @@ function check_email($email){
 }
 
 function send_mail($email, $vorname, $nachname){
+    $content = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/mail/thank-you.html');
     try{
         $mail = new PHPMailer(true);
         $mail->isSMTP();
@@ -26,7 +27,7 @@ function send_mail($email, $vorname, $nachname){
         $mail->addAddress($email, $vorname.' '.$nachname);
         $mail->isHTML(true);
         $mail->Subject = 'Anfrage erhalten';
-        $mail->msgHTML(file_get_contents(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/mail/thank-you.html')));
+        $mail->msgHTML($content);
         $mail->AltBody = 'Vielen Dank für Ihre Anfrage! Wir werden sie innerhalb der nächsten 24 Stunden bearbeiten.';
         $mail->send();
     }catch(Exception $e){
