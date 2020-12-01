@@ -17,7 +17,7 @@ function send_mail($email, $vorname, $nachname){
         $mail->isSMTP();
         $mail->SMTPDebug = 2;
         $mail->Host = 'basten-it.eu';
-        $mail->Port = 587;
+        $mail->Port = 25;
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth = true;
         $mail->Username = 'mailer@basten-it.eu';
