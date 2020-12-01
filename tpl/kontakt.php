@@ -15,28 +15,55 @@
         <div class="col-md-8">
             <?php
             
-            if(isset($_REQUEST['name']) && strlen($_REQUEST['name']) >= 1){
-                if(isset($_REQUEST['nachname']) && strlen($_REQUEST['nachname']) >= 1){
-                    if(isset($_REQUEST['email']) && strlen($_REQUEST['email']) >= 1){
-                        if(isset($_REQUEST['tel']) && strlen($_REQUEST['tel']) >= 1){
-                            if(isset($_REQUEST['nachricht']) && strlen($_REQUEST['nachricht']) >= 1){
-                                foreach($_REQUEST as $req => $val){
-                                    $_REQUEST[$req] = htmlspecialchars($val);
-                                }
-                                echo '<p id="msg" class="message">ERFOLG - Vielen Dank für Ihre Anfrage. <b>'.$_REQUEST['name'].' '.$_REQUEST['nachname'].'</b>, ein Kundendienst Mitarbeiter wird sich bei Ihnen melden!</p>';
-                            } else {
-                                echo '<p id="msg" class="message">FEHLER - Ihr Nachricht wurde nicht angegeben!</p>';
-                            }
-                        } else {
-                            echo '<p id="msg" class="message">FEHLER - Ihr Telefonummer wurde nicht angegeben!</p>';
-                        }
-                    } else {
-                        echo '<p id="msg" class="message">FEHLER - Ihr Email wurde nicht angegeben!</p>';
-                    }
-                } else {
-                    echo '<p id="msg" class="message">FEHLER - Ihr Nachname wurde nicht angegeben!</p>';
+            $errors = [];
+            $keys = [
+                'name',
+                'nachname',
+                'email',
+                'telefon',
+                'nachricht'
+            ];
+            $given = [];
+            if(isset($_REQUEST['contact'])){
+
+                foreach($_REQUEST as $key => $input){
+                    if(!empty($input))
+                        $given[] = htmlspecialchars($key);
+                    $_REQUEST[$key] = htmlspecialchars($input);
                 }
-            } else { ?>
+
+                foreach($keys as $key){
+                    if(!in_array($key, $given)){
+                        $errors[] = '<b>'.ucfirst($key).'</b>';
+                    }
+                }
+
+                if(!empty($errors)){
+                    $i = 0;
+                    $errorstring = "";
+                    $wurde_n = "wurden";
+                    foreach($errors as $error){
+                        if($i == 0){
+                            $errorstring = $error;
+                        } else {
+                            $errorstring .= ", ".$error;
+                        }
+                        $i++;
+                    }
+                    if($i == 1){ $wurde_n = "wurde"; }
+                    echo '<div class="alert alert-danger" id="error-alert">'.$errorstring.' '.$wurde_n.' nicht angegeben.</div>';
+                } else {
+                    if(!check_email($_REQUEST['email'])){
+                        echo '<div class="alert alert-danger" id="error-alert-email"><b>Email</b> ist nicht korrekt.</div>';
+                    } else {
+                        send_mail($_REQUEST['email'], $_REQUEST['name'], $_REQUEST['nachname']);
+                        echo '<div class="alert alert-success">Das Kontaktformular wurde erfolgreich versendet!</div>';
+                    }
+                }
+
+            }
+
+            ?>
                 <form action="" method="POST" id="contact-form">
                 <h2>Senden Sie uns eine Nachricht</h2>
                 <div class="row">
@@ -52,14 +79,15 @@
                         <input name="email" id="email" type="text" placeholder="E-Mail" required>
                     </div>
                     <div class="col-md-6">
-                        <input name="tel" id="tel" type="text" placeholder="Ihre Rufnummer" required>
+                        <input name="telefon" id="telefon" type="text" placeholder="Ihre Rufnummer" required>
                     </div>
                 </div>
                 <textarea name="nachricht" id="nachricht" placeholder="Nachricht" required></textarea>
+                <input type="hidden" name="contact" value="submitted">
                 <input type="submit" onClick="document.getElementById('contact-form').submit();" id="submit_contact" value="Absenden">
                 <div id="msg" class="message"></div>
             </form>
-            <?php } ?>
+           
         </div>
     </div>
 </section>

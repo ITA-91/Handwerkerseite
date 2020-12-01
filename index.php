@@ -91,6 +91,8 @@
 
     <?php
 
+    include $_SERVER['DOCUMENT_ROOT'].'/lib/func.php';
+
     if(isset($_REQUEST['cat']) && !empty($_REQUEST['cat'])){
         $page = trim(strtolower(htmlspecialchars($_REQUEST['cat'])));
         if(!file_exists("tpl/".$page.".php")){
