@@ -25,9 +25,9 @@ function send_mail($email, $vorname, $nachname){
         $mail->setFrom('mailer@basten-it.eu', 'ITA91');
         $mail->addAddress($email, $vorname.' '.$nachname);
         $mail->isHTML(true);
-        $mail->Subject = 'Test';
-        $mail->msgHTML('test');
-        $mail->AltBody = 'test';
+        $mail->Subject = 'Anfrage erhalten';
+        $mail->msgHTML(file_get_contents(file_get_contents($_SERVER['DOCUMENT_ROOT'].'/mail/thank-you.html')));
+        $mail->AltBody = 'Vielen Dank für Ihre Anfrage! Wir werden sie innerhalb der nächsten 24 Stunden bearbeiten.';
         $mail->send();
     }catch(Exception $e){
         return $e;
