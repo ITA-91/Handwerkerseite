@@ -57,6 +57,7 @@
                     if(!check_email($_REQUEST['email'])){
                         echo '<div class="alert alert-danger" id="error-alert-email"><b>Email</b> ist nicht korrekt.</div>';
                     } else {
+
                         if (strtotime($_REQUEST['datum']) <= time()){
                             echo '<div class="alert alert-danger" id="error-alert-email"><b>Datum</b> kann nicht früher als heute sein.</div>';
                         } else {
@@ -74,13 +75,15 @@
 
                             echo '<div class="alert alert-success">Das Kontaktformular wurde erfolgreich versendet! Es sind noch circa <b>'.$diff.' '.$tag_e.'</b> bis zu Ihrem Termin am <b>'.$weekdays[$weekday].'</b>.</div>';
                         }
+
+
                     }
                 }
 
             }
 
             ?>
-                <form action="" method="POST" id="contact-form">
+            <form action="" method="POST" id="contact-form">
                     <h2>Senden Sie uns eine Nachricht</h2>
                     <div class="row">
                         <div class="col-md-6">
