@@ -21,7 +21,8 @@
                 'nachname',
                 'email',
                 'telefon',
-                'nachricht'
+                'nachricht',
+                'datum'
             ];
             $given = [];
             if(isset($_REQUEST['contact'])){
@@ -56,8 +57,23 @@
                     if(!check_email($_REQUEST['email'])){
                         echo '<div class="alert alert-danger" id="error-alert-email"><b>Email</b> ist nicht korrekt.</div>';
                     } else {
-                        send_mail($_REQUEST['email'], $_REQUEST['name'], $_REQUEST['nachname']);
-                        echo '<div class="alert alert-success">Das Kontaktformular wurde erfolgreich versendet!</div>';
+                        if (strtotime($_REQUEST['datum']) <= time()){
+                            echo '<div class="alert alert-danger" id="error-alert-email"><b>Datum</b> kann nicht früher als heute sein.</div>';
+                        } else {
+                            send_mail($_REQUEST['email'], $_REQUEST['name'], $_REQUEST['nachname']);
+
+                            $weekdays = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+
+                            $date_timestamp = strtotime($_REQUEST['datum']);
+                            $diff = ceil(($date_timestamp - time())/60/60/24);
+                            $weekday = date('w', $date_timestamp);
+
+                            $tag_e = 'Tage';
+                            if ($diff == 1)
+                                $tag_e = 'Tag';
+
+                            echo '<div class="alert alert-success">Das Kontaktformular wurde erfolgreich versendet! Es sind noch circa <b>'.$diff.' '.$tag_e.'</b> bis zu Ihrem Termin am <b>'.$weekdays[$weekday].'</b>.</div>';
+                        }
                     }
                 }
 
@@ -65,27 +81,32 @@
 
             ?>
                 <form action="" method="POST" id="contact-form">
-                <h2>Senden Sie uns eine Nachricht</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input name="name" id="name" type="text" placeholder="Vorname" required>
+                    <h2>Senden Sie uns eine Nachricht</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input name="name" id="name" type="text" placeholder="Vorname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input name="nachname" id="nachname" type="text" placeholder="Nachname" required>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <input name="nachname" id="nachname" type="text" placeholder="Nachname" required>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input name="email" id="email" type="text" placeholder="E-Mail" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input name="telefon" id="telefon" type="text" placeholder="Ihre Rufnummer" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input name="email" id="email" type="text" placeholder="E-Mail" required>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input name="datum" id="datum" type="date" placeholder="Termindatum" required>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <input name="telefon" id="telefon" type="text" placeholder="Ihre Rufnummer" required>
-                    </div>
-                </div>
-                <textarea name="nachricht" id="nachricht" placeholder="Nachricht" required></textarea>
-                <input type="hidden" name="contact" value="submitted">
-                <input type="submit" onClick="document.getElementById('contact-form').submit();" id="submit_contact" value="Absenden">
-                <div id="msg" class="message"></div>
+                    <textarea name="nachricht" id="nachricht" placeholder="Nachricht" required></textarea>
+                    <input type="hidden" name="contact" value="submitted">
+                    <input type="submit" onClick="document.getElementById('contact-form').submit();" id="submit_contact" value="Absenden">
+                    <div id="msg" class="message"></div>
             </form>
            
         </div>

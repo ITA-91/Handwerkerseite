@@ -1861,6 +1861,20 @@ a.button-one {
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
 }
+#contact-form input[type="date"],.comment-form input[type="date"],#contact-form textarea,.comment-form textarea {
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  color: #666666;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
 #contact-form input[type="text"]:focus,.comment-form input[type="text"]:focus,#contact-form textarea:focus,.comment-form textarea:focus {
   border: 1px solid #ffba00;
 }

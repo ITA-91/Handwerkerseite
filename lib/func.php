@@ -22,7 +22,7 @@ function send_mail($email, $vorname, $nachname){
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth = true;
         $mail->Username = 'mailer@basten-it.eu';
-        $mail->Password = 'nic65D&2';
+        $mail->Password = 'rxP37g~3';
         $mail->setFrom('mailer@basten-it.eu', 'ITA91');
         $mail->addAddress($email, $vorname.' '.$nachname);
         $mail->isHTML(true);
